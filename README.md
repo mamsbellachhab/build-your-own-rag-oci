@@ -66,9 +66,6 @@ High-level flow:
 | 5 | [Prompt Engineering & Guardrails](docs/05-prompt-engineering-guardrails.md) | 🚧 |
 | 6 | [Evaluation](docs/06-evaluation-results.md) | 🚧 |
 
-## Corpus & Data Disclaimer
-
-All documents used in this project are **fictional**, created specifically for this demo. No real company data, internal documents, or proprietary information appear anywhere in this repository. Any resemblance to real pricing, catalogues, or business terms is coincidental and for illustrative purposes only.
 
 ## Roadmap
 
