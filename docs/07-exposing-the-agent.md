@@ -45,6 +45,3 @@ flowchart LR
 - No actual gateway or backend was deployed here, this repository stays focused on the RAG pipeline itself (Chapters 1 to 6)
 - Authentication strategy, hosting choice, and scaling are deployment-specific decisions outside the scope of a from-scratch RAG tutorial
 
-## Status
-
-Conceptual, not implemented in this repository
