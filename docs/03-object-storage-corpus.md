@@ -33,8 +33,5 @@ Create the source-of-truth storage for the RAG pipeline: an Object Storage bucke
 - **Folder-per-category structure**: keeps the corpus organized and mirrors how a real document set would be structured, even though the Knowledge Base ingests the whole bucket regardless of folder layout.
 - **Fictitious content only**: every document is invented specifically for this demo. See the Corpus & Data Disclaimer section in the main README.
 
-## Known limitation
-During upload, two files were placed under the wrong folder prefix (FAQ documents ended up inside `policies/`). This was left uncorrected for this POC since folder placement inside the bucket has no effect on retrieval — the Knowledge Base indexes the entire bucket regardless of folder structure.
-
 ## Status
 Complete
