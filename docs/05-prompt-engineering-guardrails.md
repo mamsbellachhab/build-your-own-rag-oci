@@ -62,7 +62,7 @@ flowchart TD
 
 ![Review and create](images/ch05/17.png)
 
-![Agent active](images/ch05/18-agents-list-redacted.png)
+![Agent active](images/ch05/18.png)
 
 ### 5.2 Prompt / custom instructions
 
