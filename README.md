@@ -76,14 +76,13 @@ High-level flow:
 
 ## Guide / Chapters
 
-| # | Chapter | Status |
-|---|---|---|
-| 1 | [Repo Setup](docs/01-repo-setup.md) | Complete |
-| 2 | [OCI Account & Tenancy Setup](docs/02-oci-account-setup.md) | Complete |
-| 3 | [Object Storage & Corpus](docs/03-object-storage-corpus.md) | Complete |
-| 4 | [Knowledge Base & Agent](docs/04-knowledge-base-agent.md) | Complete |
-| 5 | [Prompt Engineering & Guardrails](docs/05-prompt-engineering-guardrails.md) | Complete |
-| 6 | [Evaluation](docs/06-evaluation-results.md) | Complete |
+1. [Repo Setup](docs/01-repo-setup.md)
+2. [OCI Account & Tenancy Setup](docs/02-oci-account-setup.md)
+3. [Object Storage & Corpus](docs/03-object-storage-corpus.md)
+4. [Knowledge Base & Agent](docs/04-knowledge-base-agent.md)
+5. [Prompt Engineering & Guardrails](docs/05-prompt-engineering-guardrails.md)
+6. [Evaluation](docs/06-evaluation-results.md)
+7. [Exposing the Agent, conceptual overview](docs/07-exposing-the-agent.md)
 
 ## Corpus & Data Disclaimer
 
@@ -98,6 +97,7 @@ All documents used in this project are **fictional**, created specifically for t
 - [x] Guardrails configuration
 - [x] Prompt engineering iterations
 - [x] Evaluation harness + results
+- [x] Chapter 7: conceptual overview of exposing the agent (documented, not implemented)
 
 ## License
 
