@@ -97,7 +97,7 @@ All documents used in this project are **fictional**, created specifically for t
 - [x] Guardrails configuration
 - [x] Prompt engineering iterations
 - [x] Evaluation harness + results
-- [x] Chapter 7: conceptual overview of exposing the agent (documented, not implemented)
+- [x] Chapter 7: conceptual overview of exposing the agent
 
 ## License
 
