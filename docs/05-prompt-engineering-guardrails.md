@@ -67,3 +67,25 @@ flowchart TD
 ### 5.2 Prompt / custom instructions
 
 The RAG tool's custom instructions were edited after initial creation to enforce response formatting and strict grounding:
+
+```
+Response format:
+1. Give a direct answer first.
+2. If the answer involves multiple values (limits, dates, statuses), present them as a table.
+3. Use bullet points for steps or lists.
+4. End every response with a single line: "Source: [document name]"
+
+Grounding rules:
+- Only answer using information explicitly present in the knowledge base.
+- Do not infer, extrapolate, or combine values across documents unless explicitly stated together.
+- If the answer is not in the corpus, say so clearly instead of guessing.
+```
+
+![Edit tool, custom instructions](images/ch05/19.png)
+
+## Design decisions
+- **Guardrails disabled, documented as a conscious trade-off** rather than silently left at defaults.
+- **Explicit grounding rules over implicit trust**: telling the model what to do when the answer isn't in the corpus is what makes the honesty check in Chapter 6 possible.
+
+## Status
+Complete
