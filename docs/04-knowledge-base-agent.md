@@ -40,7 +40,7 @@ Turn the corpus into a queryable Knowledge Base and connect it to a Generative A
 
 ### 4.2 Diagnosing zero citations
 
-Testing the agent against this KB returned "I cannot provide an answer to this query. No reference found for the given query" on every question, with zero citations in the tool output. Following the same diagnostic method used throughout this project — check the citation panel before touching the prompt — this pointed to a retrieval failure, not a generation failure.
+Testing the agent against this KB returned "I cannot provide an answer to this query. No reference found for the given query" on every question, with zero citations in the tool output. Following the same diagnostic method used throughout this project, check the citation panel before touching the prompt, this pointed to a retrieval failure, not a generation failure.
 
 ```mermaid
 flowchart TD
@@ -91,8 +91,11 @@ flowchart TD
 ![Add knowledge bases to the tool](images/ch04/14.png)
 
 ## Design decisions
-- **Llama 3.3 70B for both routing and generation**: Cohere (`cohere.command-a-03-2025`) was ruled out in earlier testing on this tenancy — it fails with a "chat request type does not match serving model" error.
+- **Llama 3.3 70B for both routing and generation**: Cohere (`cohere.command-a-03-2025`) was ruled out in earlier testing on this tenancy, it fails with a "chat request type does not match serving model" error.
 - **One Knowledge Base per agent, one bucket per Knowledge Base**: kept simple for this POC; the platform supports up to 5 Knowledge Bases per RAG tool if the corpus needs to be split later.
+
+## Known limitation
+This chapter's bug is kept in the narrative rather than edited out: it is a realistic failure mode, a required linking step silently skipped in a multi-step wizard, and the diagnostic method used to catch it is the same one used throughout this project.
 
 ## Status
 Complete
